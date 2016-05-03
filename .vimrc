@@ -56,7 +56,15 @@ set fileencodings=ucs-bom,utf-8,chinese,cp936
 nmap <F2> :!./%<ENTER>
 nmap <C-I> i#!/usr/bin/env perl<ENTER><ENTER>use strict;<ENTER>use warnings;<ENTER><ENTER>
 
-
+"设置配色主题
+colorscheme freya
+hi Identifier ctermfg =darkgreen cterm =bold
+"hi Comment ctermfg =darkgreen                                                                                                                                                                                       
+"hi String ctermfg =darkred
+"hi Type ctermfg =yellow
+"hi Number ctermfg =darkblue
+"hi Constant ctermfg =blue
+"hi Statement ctermfg =darkyellow
 
 "窗口分割时,进行切换的按键热键需要连接两次,比如从下方窗口移动
 "光标到上方窗口,需要<c-w><c-w>k,非常麻烦,现在重映射为<c-k>,切换的
@@ -111,6 +119,7 @@ let javascript_enable_domhtmlcss=1
 nmap Q :q!<CR>
 nmap X :x<CR>
 
+" 记忆上次编辑的位置
 autocmd BufReadPost * if line("'\"") && line("'\"") <= line("$") | exe "normal `\"" | endif 
 
 
