@@ -57,6 +57,7 @@ nmap <F2> :!./%<ENTER>
 nmap <C-I> i#!/usr/bin/env perl<ENTER><ENTER>use strict;<ENTER>use warnings;<ENTER><ENTER>
 
 "设置配色主题
+" freya下载网址 http://www.vim.org/scripts/script.php?script_id=1651
 colorscheme freya
 hi Identifier ctermfg =darkgreen cterm =bold
 "hi Comment ctermfg =darkgreen                                                                                                                                                                                       
